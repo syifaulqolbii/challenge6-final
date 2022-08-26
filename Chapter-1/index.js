@@ -1,6 +1,6 @@
 const fs = require('fs');
 const option = { encoding: "utf-8" };
-const readline = require('readline');
+const readline = require('readline')
 const interface = readline.createInterface({
     input: process.stdin,
     output: process.stdout
