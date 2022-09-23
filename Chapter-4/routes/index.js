@@ -12,7 +12,12 @@ router.delete('/auth/deleted', middleware.mustLogin, controller.auth.deleteData)
 
 router.get('/bio/show', middleware.mustLogin, controller.biodata.show);
 router.post('/bio/input', middleware.mustLogin, controller.biodata.inputBio);
-router.post('/bio/update', controller.biodata.updateBio);
+router.post('/bio/update', middleware.mustLogin, controller.biodata.updateBio);
 router.delete('/bio/delete',middleware.mustLogin, controller.biodata.deleteData);
+
+router.get('/his/show', middleware.mustLogin, controller.history.show);
+router.post('/his/input', middleware.mustLogin, controller.history.inputHis);
+router.post('/his/update', middleware.mustLogin, controller.history.updateHis);
+router.delete('/his/delete',middleware.mustLogin, controller.history.deleteData);
 
 module.exports = router

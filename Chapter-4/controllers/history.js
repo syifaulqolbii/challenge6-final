@@ -1,9 +1,9 @@
-const {user_biodata} = require('../models');
+const {user_history} = require('../models');
 
 module.exports = {
   show: async (req, res, next)=>{
     try {
-      const user = await user_biodata.findAll();
+      const user = await user_history.findAll();
         return res.status(200).json({
           status: true,
           message: 'here we go',
@@ -14,21 +14,21 @@ module.exports = {
     }
   },
 
-  inputBio: async (req, res, next)=>{
+  inputHis: async (req, res, next)=>{
     try {
-      const {nama, email} = req.body;
-      const createUser = await user_biodata.create({
-        nama,
-        email
+      const {lamabermain, ranking} = req.body;
+      const createHis = await user_history.create({
+        lamabermain,
+        ranking
       });
 
       return res.status(201).json({
         status: true,
         message: 'success',
         data: {
-          id: createUser.id,
-          nama: createUser.nama,
-          email: createUser.email
+          id: createHis.id,
+          lama_bermain: createHis.lamabermain,
+          ranking: createHis.ranking
         }
       })
     } catch (err) {
@@ -36,27 +36,27 @@ module.exports = {
     }
   },
 
-  updateBio: async(req, res, next)=>{
+  updateHis: async(req, res, next)=>{
     try{
-      const {nama, email} = req.body;
-      const {userId} = req.params;
+      const {lamabermain, rangking} = req.body;
+      const {hisId} = req.params;
         
-        const user = await user_biodata.findOne({ where: { nama: nama } });
+        const user = await user_history.findOne({ where: { id: hisId } });
         if (!user) return res.status(404).json({ success: false, message: 'User not found!' });
 
-        const updatedBio = await user_game.update({
-            nama,
-            email
+        const updateHis = await user_game.update({
+            lamabermain,
+            rangking
         }, {
             where: {
-                id: userId
+                id: hisId
             }
         });
 
         return res.status(200).json({
             status: false,
             message: 'success',
-            data: updatedBio
+            data: updateHis
         });
 
     }catch(err){
@@ -67,9 +67,9 @@ module.exports = {
     try {
       const {nama} = req.body;
       const {id} = req.params;
-      const deleted = await user_biodata.destroy({
+      const deleted = await user_history.destroy({
         where:{
-          id : id
+          nama : nama
         }
       })
 
@@ -79,6 +79,8 @@ module.exports = {
         data: deleted
     });
       
+
+
     } catch (err) {
       next(err)
     }
