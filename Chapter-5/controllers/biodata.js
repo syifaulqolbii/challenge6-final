@@ -44,12 +44,12 @@ module.exports = {
         const user = await user_biodata.findOne({ where: { nama: nama } });
         if (!user) return res.status(404).json({ success: false, message: 'User not found!' });
 
-        const updatedBio = await user_game.update({
+        const updatedBio = await user_biodata.update({
             nama,
             email
         }, {
             where: {
-                id: userId
+                nama: nama
             }
         });
 
@@ -66,7 +66,7 @@ module.exports = {
   deleteData : async (req, res, next)=>{
     try {
       const {nama} = req.body;
-      const {id} = req.params;
+      const {id} = req.body;
       const deleted = await user_biodata.destroy({
         where:{
           id : id

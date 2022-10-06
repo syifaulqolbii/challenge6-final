@@ -38,18 +38,18 @@ module.exports = {
 
   updateHis: async(req, res, next)=>{
     try{
-      const {lamabermain, rangking} = req.body;
+      const {lamabermain, ranking, id} = req.body;
       const {hisId} = req.params;
         
-        const user = await user_history.findOne({ where: { id: hisId } });
-        if (!user) return res.status(404).json({ success: false, message: 'User not found!' });
+        const user = await user_history.findOne({ where: { id: id } });
+        if (!user) return res.status(404).json({ success: false, message: 'not found!' });
 
-        const updateHis = await user_game.update({
+        const updateHis = await user_history.update({
             lamabermain,
-            rangking
+            ranking
         }, {
             where: {
-                id: hisId
+                id: id
             }
         });
 
@@ -66,10 +66,10 @@ module.exports = {
   deleteData : async (req, res, next)=>{
     try {
       const {nama} = req.body;
-      const {id} = req.params;
+      const {id} = req.body;
       const deleted = await user_history.destroy({
         where:{
-          nama : nama
+          id : id
         }
       })
 

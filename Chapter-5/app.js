@@ -6,7 +6,7 @@ const router = require('./routes')
 const app = express()
 
 const {
-  HTTP_PORT = 3000
+  HTTP_PORT
 } = process.env
 
 app.use(express.json())

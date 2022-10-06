@@ -23,13 +23,13 @@ const authRegister = new Item({
   name: "Auth Register",
   request: {
     header: requestHeader,
-    url: "http://localhost:3000/auth/register",
+    url: "http://localhost:3001/auth/register",
     method: "POST",
     body: {
       mode: "raw",
       raw: JSON.stringify({
-        username: "value username",
-        password: "value password"
+        username: "syifaul",
+        password: "syifaul123"
       }),
     },
     auth: null,
@@ -39,13 +39,13 @@ const authLogin = new Item({
   name: "Auth Login",
   request: {
     header: requestHeader,
-    url: "http://localhost:3000/auth/login",
+    url: "http://localhost:3001/auth/login",
     method: "POST",
     body: {
       mode: "raw",
       raw: JSON.stringify({
-        username: "value username",
-        password: "value password"
+        username: "syifaul",
+        password: "syifaul123"
       }),
     },
     auth: null,
@@ -55,7 +55,7 @@ const authWhoami = new Item({
   name: "Auth Who Am I",
   request: {
     header: requestHeader,
-    url: "http://localhost:3000/auth/whoami",
+    url: "http://localhost:3001/auth/whoami",
     method: "GET",
     auth: null,
   },
@@ -64,12 +64,12 @@ const authChangepassword = new Item({
   name: "Auth Changepassword",
   request: {
     header: requestHeader,
-    url: "http://localhost:3000/auth/changepassword",
+    url: "http://localhost:3001/auth/changepassword",
     method: "POST",
     body: {
       mode: "raw",
       raw: JSON.stringify({
-        password: "value password"
+        password: "syifaul1234"
       }),
     },
     auth: null,
@@ -79,12 +79,12 @@ const authDelete = new Item({
   name: "Auth Delete",
   request: {
     header: requestHeader,
-    url: "http://localhost:3000/auth/deleted",
+    url: "http://localhost:3001/auth/deleted",
     method: "DELETE",
     body: {
       mode: "raw",
       raw: JSON.stringify({
-        username: "value username"
+        username: "syifaul"
       }),
     },
     auth: null,
@@ -96,7 +96,7 @@ const bioShow = new Item({
     name: "Biodata Show All",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/bio/show",
+      url: "http://localhost:3001/bio/show",
       method: "GET",
       auth: null,
     },
@@ -105,13 +105,13 @@ const bioInput = new Item({
     name: "Biodata Create",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/bio/create",
+      url: "http://localhost:3001/bio/input",
       method: "POST",
       body: {
         mode: "raw",
         raw: JSON.stringify({
-          nama: "value nama",
-          email: "value email"
+          nama: "syifaul qolbi",
+          email: "syifaul@mail.com"
         }),
       },
       auth: null,
@@ -121,13 +121,13 @@ const bioUpdate = new Item({
     name: "Biodata Update",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/bio/update",
+      url: "http://localhost:3001/bio/update",
       method: "POST",
       body: {
         mode: "raw",
         raw: JSON.stringify({
-          nama: "value nama",
-          email: "value email"
+          nama: "syifaul sipaling backend",
+          email: "syifasyifa32@mail.com"
         }),
       },
       auth: null,
@@ -137,7 +137,7 @@ const bioDelete = new Item({
     name: "Biodata Delete",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/bio/delete",
+      url: "http://localhost:3001/bio/delete",
       method: "DELETE",
       body: {
         mode: "raw",
@@ -154,7 +154,7 @@ const hisShow = new Item({
     name: "History Show All",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/his/show",
+      url: "http://localhost:3001/his/show",
       method: "GET",
       auth: null,
     },
@@ -163,13 +163,13 @@ const hisInput = new Item({
     name: "History Create",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/his/create",
+      url: "http://localhost:3001/his/input",
       method: "POST",
       body: {
         mode: "raw",
         raw: JSON.stringify({
-          lamabermain: "value lamabermain",
-          ranking: "value ranking"
+          lamabermain: 4,
+          ranking: "epig"
         }),
       },
       auth: null,
@@ -179,13 +179,14 @@ const hisUpdate = new Item({
     name: "History Update",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/his/update",
+      url: "http://localhost:3001/his/update",
       method: "POST",
       body: {
         mode: "raw",
         raw: JSON.stringify({
-            lamabermain: "value lamabermain",
-            ranking: "value ranking"
+            id: 1,
+            lamabermain: 2,
+            ranking: "lejen"
         }),
       },
       auth: null,
@@ -195,12 +196,12 @@ const hisDelete = new Item({
     name: "History Delete",
     request: {
       header: requestHeader,
-      url: "http://localhost:3000/his/delete",
+      url: "http://localhost:3001/his/delete",
       method: "DELETE",
       body: {
         mode: "raw",
         raw: JSON.stringify({
-          nama: "value nama"
+          nama: "syifaul"
         }),
       },
       auth: null,

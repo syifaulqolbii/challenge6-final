@@ -1,1 +1,265 @@
-{"item":[{"id":"c810121b-bcdc-44a5-af1e-2f515fa2325b","name":"Auth Register","request":{"url":{"protocol":"http","port":"3000","path":["auth","register"],"host":["localhost"],"query":[],"variable":[]},"method":"POST","body":{"mode":"raw","raw":"{\"username\":\"value username\",\"password\":\"value password\"}"}},"response":[],"event":[]},{"id":"a57b1d90-ab03-4434-abeb-006976388b92","name":"Auth Login","request":{"url":{"protocol":"http","port":"3000","path":["auth","login"],"host":["localhost"],"query":[],"variable":[]},"method":"POST","body":{"mode":"raw","raw":"{\"username\":\"value username\",\"password\":\"value password\"}"}},"response":[],"event":[]},{"id":"e30f749f-6bfa-474f-aa9d-f811ee46ec90","name":"Auth Who Am I","request":{"url":{"protocol":"http","port":"3000","path":["auth","whoami"],"host":["localhost"],"query":[],"variable":[]},"method":"GET"},"response":[],"event":[]},{"id":"1f5f4d9d-f6f5-49f6-953e-af051bd9015d","name":"Auth Changepassword","request":{"url":{"protocol":"http","port":"3000","path":["auth","changepassword"],"host":["localhost"],"query":[],"variable":[]},"method":"POST","body":{"mode":"raw","raw":"{\"password\":\"value password\"}"}},"response":[],"event":[]},{"id":"655ff9ca-2985-464b-9124-bda5b6df3c22","name":"Auth Delete","request":{"url":{"protocol":"http","port":"3000","path":["auth","deleted"],"host":["localhost"],"query":[],"variable":[]},"method":"DELETE","body":{"mode":"raw","raw":"{\"username\":\"value username\"}"}},"response":[],"event":[]},{"id":"16b5e3b1-4847-4a87-94d8-52493cfeaa1e","name":"Biodata Show All","request":{"url":{"protocol":"http","port":"3000","path":["bio","show"],"host":["localhost"],"query":[],"variable":[]},"method":"GET"},"response":[],"event":[]},{"id":"558470ef-4962-451d-9945-fb4edd9244a3","name":"Biodata Create","request":{"url":{"protocol":"http","port":"3000","path":["bio","create"],"host":["localhost"],"query":[],"variable":[]},"method":"POST","body":{"mode":"raw","raw":"{\"nama\":\"value nama\",\"email\":\"value email\"}"}},"response":[],"event":[]},{"id":"5cac73d9-e9cc-46d5-8f79-e261e8835429","name":"Biodata Update","request":{"url":{"protocol":"http","port":"3000","path":["bio","update"],"host":["localhost"],"query":[],"variable":[]},"method":"POST","body":{"mode":"raw","raw":"{\"nama\":\"value nama\",\"email\":\"value email\"}"}},"response":[],"event":[]},{"id":"58cc2c11-bdae-4a54-ae46-1732588f1121","name":"Biodata Delete","request":{"url":{"protocol":"http","port":"3000","path":["bio","delete"],"host":["localhost"],"query":[],"variable":[]},"method":"DELETE","body":{"mode":"raw","raw":"{\"id\":\"value id\"}"}},"response":[],"event":[]},{"id":"c8a31306-6d99-4395-9100-30fe9252c3e7","name":"History Show All","request":{"url":{"protocol":"http","port":"3000","path":["his","show"],"host":["localhost"],"query":[],"variable":[]},"method":"GET"},"response":[],"event":[]},{"id":"bd5f36d8-6fb9-477c-a04f-94e50115ec5d","name":"History Create","request":{"url":{"protocol":"http","port":"3000","path":["his","create"],"host":["localhost"],"query":[],"variable":[]},"method":"POST","body":{"mode":"raw","raw":"{\"lamabermain\":\"value lamabermain\",\"ranking\":\"value ranking\"}"}},"response":[],"event":[]},{"id":"b80d43c6-15f9-4eff-b59a-7629a57b55ac","name":"History Update","request":{"url":{"protocol":"http","port":"3000","path":["his","update"],"host":["localhost"],"query":[],"variable":[]},"method":"POST","body":{"mode":"raw","raw":"{\"lamabermain\":\"value lamabermain\",\"ranking\":\"value ranking\"}"}},"response":[],"event":[]},{"id":"8e47c7ce-1f03-4091-9cbb-990185b63acd","name":"History Delete","request":{"url":{"protocol":"http","port":"3000","path":["his","delete"],"host":["localhost"],"query":[],"variable":[]},"header":[{"key":"Authorization","value":""},{"key":"Content-Type","value":"application/json"},{"key":"cache-control","value":"no-cache"}],"method":"DELETE","body":{"mode":"raw","raw":"{\"nama\":\"value nama\"}"}},"response":[],"event":[]}],"event":[],"variable":[],"info":{"_postman_id":"449439e7-2db5-4adc-82c2-c7af79dd8a7a","name":"Dokumentasi API Challenge Chapter-5","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"}}
+{
+  "item": [
+    {
+      "id": "c81f9397-adb9-4952-9a63-b6f0e91fd110",
+      "name": "Auth Register",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["auth", "register"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"syifaul\",\"password\":\"syifaul123\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "f56e4126-38fd-42d6-aebc-58efc29116d0",
+      "name": "Auth Login",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["auth", "login"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"value username\",\"password\":\"value password\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "89cf091d-0b7f-47ae-8055-bc54cf6d9a7c",
+      "name": "Auth Who Am I",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["auth", "whoami"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "73a04920-2330-4b85-95a7-a319da5d1320",
+      "name": "Auth Changepassword",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["auth", "changepassword"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "body": { "mode": "raw", "raw": "{\"password\":\"value password\"}" }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "6c0472c4-1155-43e8-b033-a3ceb0965909",
+      "name": "Auth Delete",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["auth", "deleted"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "DELETE",
+        "body": { "mode": "raw", "raw": "{\"username\":\"value username\"}" }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "9a42df63-6f60-4e26-bd69-611e8a56e199",
+      "name": "Biodata Show All",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["bio", "show"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "57b3fced-43fc-483c-8b80-7db999756ffc",
+      "name": "Biodata Create",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["bio", "create"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nama\":\"value nama\",\"email\":\"value email\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "d41333ce-91bc-4fe6-b769-5293c3b84bd8",
+      "name": "Biodata Update",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["bio", "update"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nama\":\"value nama\",\"email\":\"value email\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "bd04b8b8-3e07-49e7-b07c-d9ee479560f2",
+      "name": "Biodata Delete",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["bio", "delete"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "DELETE",
+        "body": { "mode": "raw", "raw": "{\"id\":\"value id\"}" }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "edb650ed-9386-4d69-8680-8c802e9f490e",
+      "name": "History Show All",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["his", "show"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "f4ade301-d7ef-4fe7-92a2-d1d1b716557a",
+      "name": "History Create",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["his", "create"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"lamabermain\":\"value lamabermain\",\"ranking\":\"value ranking\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "73cb8f1d-1e7f-4b26-a21f-5495f2233940",
+      "name": "History Update",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["his", "update"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"lamabermain\":\"value lamabermain\",\"ranking\":\"value ranking\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "5ad06aa9-a270-4668-9ee3-a17d3804bf33",
+      "name": "History Delete",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3001",
+          "path": ["his", "delete"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Authorization", "value": "" },
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "cache-control", "value": "no-cache" }
+        ],
+        "method": "DELETE",
+        "body": { "mode": "raw", "raw": "{\"nama\":\"value nama\"}" }
+      },
+      "response": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "a8244005-b344-4d5c-b0d7-9a8d429c7bbb",
+    "name": "Dokumentasi API Challenge Chapter-5",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}
